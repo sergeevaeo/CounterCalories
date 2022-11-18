@@ -63,25 +63,25 @@ const counting = function () {
             N = weights + heights - ages - 161;
         }
         if (checkBoxes[0].checked) {
-            caloriesNorm.innerHTML = (N * 1.2).toFixed(2);
-            caloriesMinimal.innerHTML = ((N * 1.2) - ((N * 1.2) / 100) * 15).toFixed(2);
-            caloriesMaximal.innerHTML = ((N * 1.2) + ((N * 1.2) / 100) * 15).toFixed(2);
+            caloriesNorm.innerHTML = (Math.round(N * 1.2)).toString();
+            caloriesMinimal.innerHTML = (Math.round((N * 1.2) - ((N * 1.2) / 100) * 15)).toString();
+            caloriesMaximal.innerHTML = (Math.round((N * 1.2) + ((N * 1.2) / 100) * 15)).toString();
         } else if (checkBoxes[1].checked) {
-            caloriesNorm.innerHTML = (N * 1.375).toFixed(2);
-            caloriesMinimal.innerHTML = ((N * 1.375) - ((N * 1.2) / 100) * 15).toFixed(2);
-            caloriesMaximal.innerHTML = ((N * 1.375) + ((N * 1.2) / 100) * 15).toFixed(2);
+            caloriesNorm.innerHTML = (Math.round(N * 1.375)).toString()
+            caloriesMinimal.innerHTML = (Math.round((N * 1.375) - ((N * 1.375) / 100) * 15)).toString();
+            caloriesMaximal.innerHTML = (Math.round((N * 1.375) + ((N * 1.375) / 100) * 15)).toString();
         } else if (checkBoxes[2].checked) {
-            caloriesNorm.innerHTML = (N * 1.55).toFixed(2);
-            caloriesMinimal.innerHTML = ((N * 1.55) - ((N * 1.2) / 100) * 15).toFixed(2);
-            caloriesMaximal.innerHTML = ((N * 1.55) + ((N * 1.2) / 100) * 15).toFixed(2);
+            caloriesNorm.innerHTML = (Math.round(N * 1.55)).toString()
+            caloriesMinimal.innerHTML = (Math.round((N * 1.55) - ((N * 1.55) / 100) * 15)).toString();
+            caloriesMaximal.innerHTML = (Math.round((N * 1.55) + ((N * 1.55) / 100) * 15)).toString();
         } else if (checkBoxes[3].checked) {
-            caloriesNorm.innerHTML = (N * 1.725).toFixed(2);
-            caloriesMinimal.innerHTML = ((N * 1.725) - ((N * 1.2) / 100) * 15).toFixed(2);
-            caloriesMaximal.innerHTML = ((N * 1.725) + ((N * 1.2) / 100) * 15).toFixed(2);
+            caloriesNorm.innerHTML = (Math.round(N * 1.725)).toString()
+            caloriesMinimal.innerHTML = (Math.round((N * 1.725) - ((N * 1.725) / 100) * 15)).toString();
+            caloriesMaximal.innerHTML = (Math.round((N * 1.725) + ((N * 1.725) / 100) * 15)).toString();
         } else if (checkBoxes[4].checked) {
-            caloriesNorm.innerHTML = (N * 1.9).toFixed(2);
-            caloriesMinimal.innerHTML = ((N * 1.9) - ((N * 1.2) / 100) * 15).toFixed(2);
-            caloriesMaximal.innerHTML = ((N * 1.9) + ((N * 1.2) / 100) * 15).toFixed(2);
+            caloriesNorm.innerHTML = (Math.round(N * 1.9)).toString()
+            caloriesMinimal.innerHTML = (Math.round((N * 1.9) - ((N * 1.9) / 100) * 15)).toString();
+            caloriesMaximal.innerHTML = (Math.round((N * 1.9) + ((N * 1.9) / 100) * 15)).toString();
         }
     });
 };
